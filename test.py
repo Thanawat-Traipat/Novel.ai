@@ -26,6 +26,8 @@ def get_ai_response(prompt, character1, character2, genre):
 # Page title and description
 st.markdown("""
 # นิยายเกเสวๆ.AI
+
+ใส่ชื่อพระเอก นายเอก แนวที่ต้องการ แล้วมาเสวไปด้วยกันเล้ย!
 """)
 
 # User inputs
