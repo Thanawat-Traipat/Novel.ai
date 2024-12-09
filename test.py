@@ -25,9 +25,7 @@ def get_ai_response(prompt, character1, character2, genre):
 
 # Page title and description
 st.markdown("""
-# Romance Novel Writing App 💖
-
-Unleash your inner writer! This app helps you generate a personalized romance novel based on your input. Just provide the names of your main characters and choose a romance sub-genre, and watch your love story unfold.
+# นิยายเกเสวๆ.AI
 """)
 
 # User inputs
