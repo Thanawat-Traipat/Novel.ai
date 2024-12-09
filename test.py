@@ -31,22 +31,15 @@ st.markdown("""
 """)
 
 # User inputs
-character1 = st.text_input("Main Character 1 Name", "Alex")
-character2 = st.text_input("Main Character 2 Name", "Jordan")
-
-genre = st.selectbox(
-    "Choose the Romance Genre:",
-    options=["Contemporary", "Historical", "Fantasy", "Paranormal", "Comedy"],
-    help="Select the romance genre for your novel."
-)
+character1 = st.text_input("ชื่อพระเอก", " ")
+character2 = st.text_input("ชื่อนายเอก", " ")
+genre = st.text_input("แนวที่ต้องการ", " ")
 
 # AI prompt guiding the story generation
 prompt = f"""
-You are a creative writer specializing in romance novels. You will write a detailed romance story that revolves around two main characters. The story should be emotional, captivating, and structured with vivid descriptions of the characters' feelings, interactions, and the development of their relationship. Incorporate the chosen romance genre into the story.
-
-- Include emotional highs and lows, conflicts, and resolutions.
-- Develop the chemistry between the two characters over time.
-- Match the tone and elements to the selected genre.
+You are a creative writer specializing in bl novels. You will recieve Thai prompts and the output will be in Thai. You should write a story that is entertaining and over the top, even a bit satire. It should be the climax scene too.
+- Incorperate the tone and elements to the selected genre.
+- Use funny thai words like 'ร่างหนา' for character1 and 'ร่างบาง' for characte2
 """
 
 # Display a button to generate the story
