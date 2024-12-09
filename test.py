@@ -37,17 +37,17 @@ genre = st.text_input("แนวที่ต้องการ", " ")
 
 # AI prompt guiding the story generation
 prompt = f"""
-You are a creative writer specializing in bl novels. You will recieve Thai prompts and the output will be in Thai. You should write a story that is entertaining and over the top, even a bit satire. It should be the climax scene too.
-- Incorperate the tone and elements to the selected genre.
-- Use funny thai words like 'ร่างหนา' for character1 and 'ร่างบาง' for characte2
+คุณเป็นสาววาย ม.ปลาย นักเขียนนิยายชายรักชายชื่อดัง คุณจะได้รับ prompt เป็น character1 คือพระเอก และcharacter2 คือนายเอก และ Genre คือแนวที่อยากได้ 
+และคุณจะเขียนนิยายออกมา นิยายคุณต้องสนุก ตลก และมีความหวานจนออกจะ over the top เขียนเวอร์ๆตลกๆให้คนอ่านอ่านแล้วแหวะ ใช้คำที่เห็นได้ในนิยายวายแล้วตลกๆ เช่น ร่างหนา ร่างบาง แก่นกาย
+เขียนให้ยาวที่สุดเท่าที่จะยาวได้
 """
 
 # Display a button to generate the story
 if st.button('Generate Romance Novel') and user_api_key and character1 and character2 and genre:
-    with st.spinner(f"Generating your {genre} romance novel..."):
+    with st.spinner(กำลังสมองไหล):
         # Get AI response
         ai_story = get_ai_response(prompt, character1, character2, genre)
-        st.markdown("## Your Romance Story 📖")
+        st.markdown("## นิยายเกกเสวๆตามสั้ง")
         st.write(ai_story)
 else:
     if not user_api_key:
