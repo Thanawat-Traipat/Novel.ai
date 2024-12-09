@@ -44,7 +44,7 @@ prompt = f"""
 
 # Display a button to generate the story
 if st.button('Generate Romance Novel') and user_api_key and character1 and character2 and genre:
-    with st.spinner(กำลังสมองไหล):
+    with st.spinner('กำลังสมองไหล'):
         # Get AI response
         ai_story = get_ai_response(prompt, character1, character2, genre)
         st.markdown("## นิยายเกกเสวๆตามสั้ง")
