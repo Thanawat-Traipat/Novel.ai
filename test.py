@@ -162,7 +162,7 @@ if st.button('Generate Romance Novel') and user_api_key and character1 and chara
     with st.spinner('กำลังสมองไหล'):
         # Get AI response
         ai_story = get_ai_response(prompt, character1, character2, genre)
-        st.markdown("## นิยายเกกเสวๆตามสั้ง")
+        st.markdown("## นิยายเกเสวๆตามสั้ง")
         st.write(ai_story)
 else:
     if not user_api_key:
